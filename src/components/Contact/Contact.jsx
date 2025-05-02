@@ -4,10 +4,10 @@ import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsOps";
 
 const Contact = ({ contact: { name, number, id } }) => {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
 
   const deleteUser = () => {
-    dispath(deleteContact(id));
+    dispatch(deleteContact(id));
   };
   return (
     <>
